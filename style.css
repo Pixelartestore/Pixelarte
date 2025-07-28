@@ -233,38 +233,6 @@ form textarea {
 
 @media (max-width: 500px) {
   .grid-productos {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-}
-
-  .modal-content {
-    padding: 1rem;
-  }
-
-  .titulo-detalle {
-    font-size: 1.5rem;
-  }
-
-  .detalle-descripcion {
-    font-size: 0.95rem;
-  }
-
-  #inicio h1 {
-    font-size: 3rem;
-  }
-
-  #inicio p {
-    font-size: 1.2rem;
-  }
-
-  .buscar {
-    width: 90%;
-  }
-}
-
-@media (max-width: 500px) {
-  .grid-productos {
     grid-template-columns: 1fr;
   }
 
@@ -293,12 +261,12 @@ form textarea {
   }
 
   .volver {
-  position: fixed;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.75rem;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-}
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
 }

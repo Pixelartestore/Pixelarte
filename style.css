@@ -261,7 +261,7 @@ form textarea {
   }
 
   .volver {
-    bottom: 15px;
+    bottom: 20px;
     left: auto; /* centrado ya no es necesario */
     right: 10px; /* lo pegamos a la esquina */
     transform: none;

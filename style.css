@@ -14,16 +14,18 @@
 
 body {
   background-color: var(--color-rosa);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 section {
   display: none;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+  flex-direction: column;
 }
 
 #inicio {
@@ -222,4 +224,43 @@ form textarea {
   color: #333;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .grid-productos {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .titulo-detalle {
+    font-size: 1.5rem;
+  }
+
+  .detalle-descripcion {
+    font-size: 0.95rem;
+  }
+
+  #inicio h1 {
+    font-size: 3rem;
+  }
+
+  #inicio p {
+    font-size: 1.2rem;
+  }
+
+  .buscar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .volver {
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
 }

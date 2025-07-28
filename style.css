@@ -271,7 +271,9 @@ form textarea {
     width: auto; /* aseguramos que no se estire */
     min-width: unset;
   }
+}
 
+@media (max-width: 500px) {
   .modal-content {
     max-width: 90%;
     padding: 1rem;

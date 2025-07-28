@@ -237,7 +237,29 @@ form textarea {
   }
 
   .modal-content {
+    width: 90%;
+    max-width: 90%;
     padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-content img {
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1rem;
+  }
+
+  .modal-content p {
+    font-size: 0.95rem;
   }
 
   .titulo-detalle {
@@ -262,38 +284,13 @@ form textarea {
 
   .volver {
     bottom: 15px;
-    left: auto; /* centrado ya no es necesario */
-    right: 10px; /* lo pegamos a la esquina */
+    left: auto;
+    right: 10px;
     transform: none;
     font-size: 0.75rem;
-    padding: 0.4rem 0.6rem; /* más pequeño */
+    padding: 0.4rem 0.6rem;
     border-radius: 6px;
-    width: auto; /* aseguramos que no se estire */
+    width: auto;
     min-width: unset;
-  }
-}
-
-@media (max-width: 500px) {
-  .modal-content {
-    max-width: 90%;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-
-  .modal-content img {
-    max-height: 200px;
-    object-fit: cover;
-  }
-
-  .modal-content h2 {
-    font-size: 1.5rem;
-  }
-
-  .modal-content h3 {
-    font-size: 1rem;
-  }
-
-  .modal-content p {
-    font-size: 0.95rem;
   }
 }

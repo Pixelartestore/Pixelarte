@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel@rte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:slnt,wght@-8,330&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="inicio">
+    <h1>¡Bienvenido a Pixel@rte!</h1>
+    <p>Descubre productos hermosos y únicos para todos los gustos.</p>
+    <button class="boton" onclick="mostrar('productos')">Ver Productos</button>
+    <button class="boton" onclick="mostrar('contacto')">Contacto</button>
+  </section>
+
+  <section id="productos">
+    <button class="boton volver" onclick="volverInicio()">Volver al Inicio</button>
+    <input class="buscar" type="text" placeholder="Buscar producto..." onkeyup="buscarProducto(this.value)" />
+    <div class="grid-productos" id="lista-productos"></div>
+  </section>
+
+  <section id="contacto">
+    <button class="boton volver" onclick="volverInicio()">Volver al Inicio</button>
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea rows="4" placeholder="Mensaje" required></textarea>
+      <button class="boton" type="submit">Enviar</button>
+    </form>
+    <div class="redes">
+      <p>Síguenos en nuestras redes sociales</p>
+      <!-- Íconos o enlaces de redes -->
+    </div>
+  </section>
+
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

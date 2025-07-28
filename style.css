@@ -263,7 +263,7 @@ form textarea {
   .volver {
     bottom: 15px;
     left: auto; /* centrado ya no es necesario */
-    right: 15px; /* lo pegamos a la esquina */
+    right: 10px; /* lo pegamos a la esquina */
     transform: none;
     font-size: 0.75rem;
     padding: 0.4rem 0.6rem; /* más pequeño */

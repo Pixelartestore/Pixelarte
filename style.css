@@ -261,12 +261,14 @@ form textarea {
   }
 
   .volver {
-    position: fixed;
+   position: fixed;
     bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 15px;
+    left: auto;
+    transform: none;
     font-size: 0.75rem;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.6rem;
     border-radius: 6px;
+    width: auto;
   }
 }

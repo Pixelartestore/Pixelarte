@@ -261,14 +261,21 @@ form textarea {
   }
 
   .volver {
-   position: fixed;
-    bottom: 15px;
-    right: 15px;
-    left: auto;
-    transform: none;
-    font-size: 0.75rem;
-    padding: 0.4rem 0.6rem;
-    border-radius: 6px;
-    width: auto;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: var(--color-hover);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 999;
   }
 }

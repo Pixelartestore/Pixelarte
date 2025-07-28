@@ -95,10 +95,15 @@ section {
 
 .volver {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--color-hover);
-  display: none;
+  z-index: 999;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-family: 'Outfit', sans-serif;
 }
 
 .grid-productos {
@@ -264,5 +269,12 @@ form textarea {
     left: 10px;
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .volver {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
   }
 }

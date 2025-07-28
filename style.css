@@ -264,18 +264,40 @@ form textarea {
 }
 
 @media (max-width: 500px) {
-  .volver {
-    top: 10px;
-    left: 10px;
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
+  .grid-productos {
+    grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 500px) {
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .titulo-detalle {
+    font-size: 1.5rem;
+  }
+
+  .detalle-descripcion {
+    font-size: 0.95rem;
+  }
+
+  #inicio h1 {
+    font-size: 3rem;
+  }
+
+  #inicio p {
+    font-size: 1.2rem;
+  }
+
+  .buscar {
+    width: 90%;
+  }
+
   .volver {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 0.9rem;
     padding: 0.7rem 1.5rem;
   }
 }
-

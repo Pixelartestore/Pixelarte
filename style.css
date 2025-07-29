@@ -307,3 +307,7 @@ form textarea {
   z-index: 1001;
   font-family: 'Outfit', sans-serif;
 }
+
+body:not(.js-activo) #inicio {
+  display: flex;
+}

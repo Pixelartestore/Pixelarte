@@ -8,6 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <div id="carrito-icono" onclick="mostrarCarrito()">
+  🛒 <span id="cantidad-carrito">0</span>
+  </div>
+  
   <div class="modal" id="carrito-modal">
   <div class="modal-content" id="carrito-contenido">
     <h2>Tu carrito</h2>
@@ -16,10 +21,6 @@
     <button class="boton" onclick="cerrarCarrito()">Cerrar</button>
   </div>
   </div>
-<body>
-<div id="carrito-icono" onclick="mostrarCarrito()">
-  🛒 <span id="cantidad-carrito">0</span>
-</div>
   <section id="inicio">
     <h1>¡Bienvenido a Pixel@rte!</h1>
     <p>Descubre productos hermosos y únicos para todos los gustos.</p>

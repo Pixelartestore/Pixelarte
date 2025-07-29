@@ -1,5 +1,4 @@
 const productos = [
-  let carrito = [];
   {
     nombre: 'GRAMERA SF400',
     precio: '$30.000',
@@ -22,6 +21,8 @@ const productos = [
     imagen: './imagenes/afilador.jpg'
   }
 ];
+
+let carrito = [];
 
 function mostrar(seccion) {
   document.querySelectorAll('section').forEach(s => s.style.display = 'none');

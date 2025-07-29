@@ -8,6 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+  <div class="modal" id="carrito-modal">
+  <div class="modal-content" id="carrito-contenido">
+    <h2>Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total:</strong> <span id="total-carrito">$0</span></p>
+    <button class="boton" onclick="cerrarCarrito()">Cerrar</button>
+  </div>
+  </div>
 <body>
 <div id="carrito-icono" onclick="mostrarCarrito()">
   🛒 <span id="cantidad-carrito">0</span>

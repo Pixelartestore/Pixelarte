@@ -52,6 +52,10 @@ function renderProductos(lista = productos) {
   });
 }
 
+function mostrarCarrito() {
+  alert("Aquí irá tu carrito pronto 🛒");
+}
+
 function verDetalles(index) {
   const p = productos[index];
   const modal = document.getElementById('modal');

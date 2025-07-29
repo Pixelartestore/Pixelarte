@@ -1,4 +1,5 @@
 const productos = [
+  let carrito = [];
   {
     nombre: 'GRAMERA SF400',
     precio: '$30.000',
@@ -77,6 +78,35 @@ function verDetalles(index) {
 
 function cerrarModal() {
   document.getElementById('modal').style.display = 'none';
+}
+
+function agregarAlCarrito(index) {
+  carrito.push(productos[index]);
+  actualizarContador();
+}
+
+function actualizarContador() {
+  document.getElementById('cantidad-carrito').textContent = carrito.length;
+}
+
+function renderizarCarrito() {
+  const lista = document.getElementById('lista-carrito');
+  const total = document.getElementById('total-carrito');
+
+  lista.innerHTML = '';
+  let suma = 0;
+
+  carrito.forEach(producto => {
+    const li = document.createElement('li');
+    li.textContent = `${producto.nombre} - ${producto.precio}`;
+    lista.appendChild(li);
+
+    // Convertir precio a número: "$30.000" → 30000
+    const precioNum = parseInt(producto.precio.replace('$', '').replace('.', ''));
+    suma += precioNum;
+  });
+
+  total.textContent = `$${suma.toLocaleString('es-CO')}`;
 }
 
 function buscarProducto(valor) {

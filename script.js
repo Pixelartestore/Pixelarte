@@ -54,6 +54,7 @@ function renderProductos(lista = productos) {
 
 function mostrarCarrito() {
   document.getElementById('carrito-modal').style.display = 'flex';
+  renderizarCarrito();
 }
 
 function cerrarCarrito() {

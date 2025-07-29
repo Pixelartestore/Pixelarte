@@ -123,3 +123,6 @@ renderProductos();
 
 document.querySelectorAll('section').forEach(s => s.style.display = 'none');
 document.getElementById('inicio').style.display = 'flex';
+
+document.body.classList.add('js-activo');
+

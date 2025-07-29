@@ -120,3 +120,6 @@ function buscarProducto(valor) {
 
 // Inicializar productos al cargar
 renderProductos();
+
+document.querySelectorAll('section').forEach(s => s.style.display = 'none');
+document.getElementById('inicio').style.display = 'flex';

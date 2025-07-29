@@ -53,7 +53,11 @@ function renderProductos(lista = productos) {
 }
 
 function mostrarCarrito() {
-  alert("Aquí irá tu carrito pronto 🛒");
+  document.getElementById('carrito-modal').style.display = 'flex';
+}
+
+function cerrarCarrito() {
+  document.getElementById('carrito-modal').style.display = 'none';
 }
 
 function verDetalles(index) {

@@ -33,14 +33,9 @@ section {
   flex-direction: column;
   gap: 3rem;
   text-align: center;
-  background-color: var(--color-principal);
-  animation: fadeIn 1s ease-in;
-}
-
-#inicio {
-  text-align: center;
-  padding: 100px 20px;
   background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+  animation: fadeIn 1s ease-in;
+  padding: 100px 20px;
   min-height: 100vh;
 }
 

@@ -46,6 +46,7 @@ function renderProductos(lista = productos) {
       <p>${p.precio}</p>
       <p class="breve-descripcion">${p.descripcion}</p>
       <button class="boton" onclick="verDetalles(${i})">Detalles</button>
+      <button class="boton" onclick="agregarAlCarrito(${i})">Agregar al carrito</button>
     `;
     contenedor.appendChild(div);
   });

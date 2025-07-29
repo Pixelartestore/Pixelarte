@@ -22,7 +22,7 @@ const productos = [
   }
 ];
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 function mostrar(seccion) {
   document.querySelectorAll('section').forEach(s => s.style.display = 'none');
@@ -84,6 +84,7 @@ function cerrarModal() {
 function agregarAlCarrito(index) {
   carrito.push(productos[index]);
   actualizarContador();
+  localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 
 function actualizarContador() {

@@ -293,4 +293,17 @@ form textarea {
     width: auto;
     min-width: unset;
   }
+  
+#carrito-icono {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  font-family: 'Outfit', sans-serif;
 }
